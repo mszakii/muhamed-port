@@ -313,3 +313,58 @@ section {
 .work .label[data-level="low"] {
   background: var(--success);
 }
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background: var(--color);
+  color: white;
+  margin-top: 50px;
+}
+footer .one {
+  height: 300px;
+}
+
+footer .one .left h2 {
+  margin: 20px 0;
+  color: var(--success);
+}
+
+footer .one .right {
+  width: 120%;
+}
+
+@media (max-width: 768px) {
+  footer .parent {
+    flex-direction: column;
+  }
+
+  footer .one .right {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0;
+  }
+}
+
+footer .one .right a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+footer .one .right a:hover {
+  color: var(--success);
+}
+
+footer .two {
+  text-align: center;
+}
+
+footer .two a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--success);
+}
