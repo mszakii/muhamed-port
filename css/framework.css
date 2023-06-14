@@ -147,9 +147,18 @@ body {
 }
 
 .h-max {
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .w-100 {
   width: 100%;
+}
+/* lablel */
+.g-label {
+  background: var(--success);
+  color: white;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bold;
 }

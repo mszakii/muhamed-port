@@ -1,9 +1,9 @@
-body {
-  height: 200vh;
-}
+/* header {
+  overflow: hidden;
+} */
 
 header {
-  overflow: hidden;
+  min-width: 100vh;
 }
 
 header nav {
@@ -84,7 +84,7 @@ header .landing .caption span:nth-child(2) {
 
 /* .right */
 header .landing .parent {
-  height: calc(100vh - 64px);
+  min-height: calc(100vh - 64px);
 }
 
 header .landing .right {
@@ -95,15 +95,32 @@ header .landing .right {
   align-items: flex-end;
 }
 
+@media (max-width: 992px) {
+  header {
+    overflow: visible;
+  }
+
+  header .landing .parent {
+    flex-direction: column;
+    margin: 50px auto;
+    min-height: 100vh;
+  }
+
+  header .landing .right {
+    justify-content: center;
+  }
+}
+
 header .landing .photo {
   width: 500px;
   display: flex;
   align-items: flex-end;
 }
 
-@media (min-height: 800px) {
+@media (min-height: 900px) {
   header .landing .right {
-    display: none;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -114,4 +131,57 @@ header .landing .photo img {
 header .blob {
   position: absolute;
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  header .landing .photo {
+    width: 300px;
+  }
+
+  header .blob {
+    width: 300px;
+  }
+}
+
+/* Sections */
+section {
+  height: 100vh;
+}
+
+/* About */
+.about > .parent {
+  height: 100%;
+}
+
+.about .parent .left {
+  justify-content: center;
+  align-items: center;
+}
+
+.about .parent .left img {
+  width: 400px;
+}
+
+.about .parent .right {
+  justify-content: center;
+}
+
+.about .parent .right .des {
+  margin: 40px 0 40px 20px;
+}
+
+@media (min-width: 768px) {
+  .about .parent {
+    margin: 50px auto;
+  }
+
+  .about .parent .left img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about .parent {
+    flex-direction: column;
+  }
 }
