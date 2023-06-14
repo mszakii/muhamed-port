@@ -3,7 +3,7 @@
 } */
 
 header {
-  background: var(--landing);
+  /* background: var(--landing); */
 }
 
 header nav {
@@ -155,7 +155,7 @@ header .right .buble {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--info);
+  background: white;
   border-radius: 50%;
   animation: buble 4s ease-in-out infinite;
 }
@@ -179,7 +179,6 @@ header .right .buble img {
 }
 
 header .right .buble.a {
-  background: var(--success);
   bottom: 350px;
   left: 100px;
 }
@@ -193,7 +192,6 @@ header .right .buble.c {
   bottom: 300px;
   left: 400px;
   z-index: 2;
-  background: var(--danger);
 }
 
 /* Sections */
