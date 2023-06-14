@@ -126,6 +126,7 @@ header .landing .photo {
 
 header .landing .photo img {
   width: 100%;
+  z-index: 1;
 }
 
 header .blob {
@@ -141,6 +142,58 @@ header .blob {
   header .blob {
     width: 300px;
   }
+}
+
+header .right {
+  position: relative;
+}
+
+header .right .buble {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--info);
+  border-radius: 50%;
+  animation: buble 4s ease-in-out infinite;
+}
+
+@keyframes buble {
+  form {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 20px);
+  }
+
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
+header .right .buble img {
+  width: 30px;
+}
+
+header .right .buble.a {
+  background: var(--success);
+  bottom: 350px;
+  left: 100px;
+}
+
+header .right .buble.b {
+  top: 180px;
+  left: 350px;
+}
+
+header .right .buble.c {
+  bottom: 300px;
+  left: 400px;
+  z-index: 2;
+  background: var(--danger);
 }
 
 /* Sections */
@@ -190,4 +243,36 @@ section {
   .about .parent {
     flex-direction: column;
   }
+}
+
+/* Work */
+.work .info {
+  justify-content: center;
+  align-items: center;
+}
+
+.work .gallary .parnet {
+  min-height: 100%;
+}
+
+.work .card {
+  width: 340px;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.work .card img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.work .card .title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+}
+
+.work .card .des {
+  font-size: 0.75rem;
 }

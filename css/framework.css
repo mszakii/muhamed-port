@@ -8,7 +8,7 @@
   --color: #262626;
   --section: hsl(0, 0%, 99%);
   --bg: #fff;
-  --landing: hsl(247, 85%, 98%);
+  --landing: hsl(247, 85%, 99%);
   --padding: 20px;
   --transition: 0.25s;
 
@@ -160,6 +160,12 @@ body {
 .w-100 {
   width: 100%;
 }
+
+/* Grid */
+.grid {
+  display: grid;
+}
+
 /* lablel */
 .g-label {
   background: var(--success);
