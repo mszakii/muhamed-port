@@ -1,0 +1,117 @@
+body {
+  height: 200vh;
+}
+
+header {
+  overflow: hidden;
+}
+
+header nav {
+  background: var(--section);
+  box-shadow: 0 0 5px #ddd;
+}
+
+header .name {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--color);
+  margin: 0 10px;
+  transition: var(--transition) color;
+}
+
+header nav a:hover {
+  color: var(--primary);
+}
+
+header nav .fa-bars {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header nav .parent {
+    width: 100%;
+    position: relative;
+  }
+
+  header nav .links {
+    position: absolute;
+    background: var(--section);
+    top: 45px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s height;
+  }
+
+  header nav a {
+    text-align: center;
+    padding: var(--padding);
+    margin: 0;
+    transition: var(--transition) background;
+  }
+
+  header nav a:hover {
+    background: var(--primary);
+    color: white;
+  }
+
+  header nav .fa-bars {
+    display: block;
+  }
+}
+
+/* portfolio */
+/* .left */
+header .landing .left {
+  justify-content: center;
+}
+
+header .landing .caption span:nth-child(1) {
+  color: var(--primary);
+}
+
+header .landing .caption span:nth-child(2) {
+  color: var(--danger);
+}
+
+/* .right */
+header .landing .parent {
+  height: calc(100vh - 64px);
+}
+
+header .landing .right {
+  display: flex;
+  /* justify-content: flex-end;
+  align-items: center; */
+  padding: 0;
+  align-items: flex-end;
+}
+
+header .landing .photo {
+  width: 500px;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (min-height: 800px) {
+  header .landing .right {
+    display: none;
+  }
+}
+
+header .landing .photo img {
+  width: 100%;
+}
+
+header .blob {
+  position: absolute;
+  z-index: -1;
+}
